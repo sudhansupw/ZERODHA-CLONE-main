@@ -1,0 +1,141 @@
+/* Overlay */
+.action-window-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Card Container */
+.action-window-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  color: white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 0.3s ease-out;
+}
+
+/* Header */
+.action-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.buy-title {
+  color: #00ff8c;
+}
+
+.sell-title {
+  color: #ff4c4c;
+}
+
+.close-icon {
+  cursor: pointer;
+  color: #ccc;
+  transition: 0.2s;
+}
+
+.close-icon:hover {
+  color: white;
+}
+
+/* Body */
+.action-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.input-group input {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-group input:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.margin-info {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  text-align: right;
+  color: #ccc;
+}
+
+/* Footer */
+.action-footer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.7rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-buy {
+  background: #00ff8c;
+  color: #0d0d0d;
+}
+
+.btn-sell {
+  background: #ff4c4c;
+  color: white;
+}
+
+.btn-cancel {
+  background: #555;
+  color: #eee;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

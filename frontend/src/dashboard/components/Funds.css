@@ -1,0 +1,139 @@
+.funds {
+  margin-left: 10%;
+  width: 80%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #f7fbff 0%, #e8f1ff 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.14);
+}
+
+.funds p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+  font-weight: 500;
+}
+
+.fund-btn {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.25s ease-in-out;
+}
+
+.fund-btn-green {
+  background: #26942a;
+}
+
+.fund-btn-blue {
+  background: #4184f3;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Table section container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem auto;
+  width: 95%;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+/* Each column box */
+.col {
+  flex: 1 1 48%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.col:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Table layout */
+.table {
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+/* Each row in the table */
+.data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.6rem 0;
+  padding: 0.3rem 0;
+  border-bottom: 1px dashed #f1f1f1;
+}
+
+.data p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+/* Important numbers */
+.imp {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.colored {
+  color: #4caf50;
+}
+
+/* Section headings like "Equity" */
+.col > span > p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e2125;
+  margin-bottom: 1rem;
+}
+
+/* Divider styling */
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 1rem 0;
+}
+
+/* Commodity box */
+.commodity {
+  text-align: center;
+  justify-content: center;
+  background: #f6f9ff;
+  padding: 2rem;
+  border-radius: 6px;
+  border: 1px solid #d8e4ff;
+}
+
+.commodity p {
+  color: #000000;
+  margin-bottom: 1rem;
+}
