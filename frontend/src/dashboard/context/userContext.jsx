@@ -8,7 +8,7 @@ export const useUser = () => useContext(UserContext);
 const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
+  const API = import.meta.env.VITE_API_URL || "https://zerodha-clone-main-38fj.onrender.com";
   const navigate = useNavigate();
 
   // ✅ Load user on mount using stored JWT

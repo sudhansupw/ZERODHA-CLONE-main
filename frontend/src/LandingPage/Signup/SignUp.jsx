@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { useUser } from "../../dashboard/context/userContext";
 
-const API = "http://localhost:5000";
+const API = "https://zerodha-clone-main-38fj.onrender.com";
 
 export default function Signup() {
   const [authMode, setAuthMode] = useState("signup"); // signup | login

@@ -5,7 +5,7 @@ import "./Orders.css";
 
 const Orders = () => {
   const [orders, setOrders] = useState([]);
-  const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
+  const API = import.meta.env.VITE_API_URL || "https://zerodha-clone-main-38fj.onrender.com";
 
   const fetchOrders = async () => {
     try {

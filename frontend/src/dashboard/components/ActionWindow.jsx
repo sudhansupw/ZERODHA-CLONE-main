@@ -5,7 +5,7 @@ import axios from "axios";
 import GeneralContext from "../context/GeneralContext";
 import "./ActionWindow.css";
 
-const API = "http://localhost:5000";
+const API = "https://zerodha-clone-main-38fj.onrender.com";
 
 const ActionWindow = ({ uid, mode }) => {
   const generalContext = useContext(GeneralContext);
