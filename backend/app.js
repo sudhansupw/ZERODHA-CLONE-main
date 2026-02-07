@@ -16,7 +16,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "https://zerodha-clone-main-two.vercel.app/", // Your frontend
+    origin: "https://zerodha-clone-main-two.vercel.app", // Your frontend
     credentials: true, // Important: allows cookies to be sent
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
